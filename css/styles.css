@@ -1,0 +1,142 @@
+:root {
+     --primary-color: #212121;
+     --secondary-color: #757575;
+     --background-primary-color: #FFFFFF;
+     --background-secondary-color: #2F303A;
+     --accent-color: #2196F3;
+     --transperent-color: #FFFFFF99;
+     --inactive-filter-color: #F5F4FA;
+}
+ body {
+     font-family: "Roboto", sans-serif;
+     font-style: normal;
+     font-size: 14px;
+     color: #212121;
+}
+ .header {
+     background-color: var(--background-primary-color);
+}
+ .contact-info, .navigation-button-list {
+     list-style-type: none;
+}
+ .logo, .footer-logo {
+     color: var(--primary-color);
+     text-decoration: none;
+     font-family: "Raleway", sans-serif;
+     letter-spacing: 0.78px;
+     font-weight: 700;
+     font-size: 26px;
+}
+ .accent-text-logo {
+     color: var(--accent-color) 
+}
+ .tel, .email, .navigation-button, .navigation-button-active {
+     transition: color 300ms;
+     color: var(--primary-color);
+     text-decoration: none;
+     font-weight: 500;
+}
+ .tel, .email {
+     color: var(--secondary-color) 
+}
+ .tel:hover, .tel:focus, .email:hover, .email:focus, .navigation-button:hover, .navigation-button:focus, .navigation-button-active {
+     color: var(--accent-color);
+}
+ .hero {
+     background-color: var(--background-secondary-color);
+}
+ .hero-header {
+     color: var(--background-primary-color);
+     font-size: 44px;
+     font-weight: 900;
+     text-transform: uppercase;
+     line-height: 1.36;
+     letter-spacing: 2.64px;
+}
+ .hero-button {
+     color: var(--background-primary-color);
+     font-size: 16px;
+     font-weight: 700;
+     line-height: 1.87;
+     letter-spacing: 0.96px;
+     background-color: var(--accent-color);
+     cursor: pointer;
+}
+ .feature, .development-stack-list, .filter-list, .team-list, .project-list {
+     list-style-type: none;
+}
+ .feature-title {
+     color: var(--primary-color);
+     font-weight: 700;
+     text-transform: uppercase;
+     font-size: 14px;
+     letter-spacing: 0.42px;
+}
+ .feature-description {
+     color: var(--secondary-color);
+     line-height: 1.71;
+     letter-spacing: 0.42px;
+}
+ .development-stack-header, .team-header {
+     color: var(--primary-color);
+     font-size: 36px;
+     font-weight: 700;
+     letter-spacing: 1.08px;
+}
+ .employee-name, .employee-job {
+     color: var(--primary-color);
+     font-size: 16px;
+     font-weight: 500;
+     letter-spacing: 0.48px;
+}
+ .employee-job {
+     color: var(--secondary-color);
+}
+ .footer {
+     background-color: var(--background-secondary-color);
+}
+ .footer-logo {
+     color: var(--background-primary-color);
+}
+ .studio-adress, .email-footer, .tel-footer {
+     color: var(--transperent-color);
+     font-style: normal;
+     font-size: 14px;
+     line-height: 1.14;
+     letter-spacing: 0.42;
+}
+ .email-footer, .tel-footer {
+     color: var(--secondary-color);
+     text-decoration: none;
+}
+ .filter {
+     color: var(--primary-color);
+     background-color: var(--inactive-filter-color);
+     font-family: inherit;
+     font-size: 16px;
+     font-weight: 500;
+     line-height: 1.62;
+     letter-spacing: 0.48px;
+     cursor: pointer;
+     transition: color 300ms;
+}
+ .filter:hover, .filter:focus {
+     color: var(--background-primary-color);
+     background-color: var(--accent-color);
+}
+ .project {
+     text-decoration: none;
+}
+ .project-title {
+     color: var(--primary-color);
+     font-size: 18px;
+     font-weight: 700;
+     line-height: 2;
+     letter-spacing: 1.08px;
+}
+ .project-description {
+     color: var(--secondary-color);
+     font-size: 16px;
+     line-height: 1.87;
+     letter-spacing: 0.48px;
+}
