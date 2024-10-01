@@ -1,11 +1,11 @@
 :root {
-     --primary-color: #212121;
-     --secondary-color: #757575;
-     --background-primary-color: #FFFFFF;
-     --background-secondary-color: #2F303A;
-     --accent-color: #2196F3;
-     --transperent-color: #FFFFFF99;
-     --inactive-filter-color: #F5F4FA;
+    --primary-color: #212121;           /* Dark Gray */
+    --secondary-color: #757575;         /* Medium Gray */
+    --background-primary-color: #FFFFFF; /* White */
+    --background-secondary-color: #2F303A; /* Dark Blue-Gray */
+    --accent-color: #2196F3;            /* Blue */
+    --transparent-color: #FFFFFF99;      /* Semi-Transparent White */
+    --inactive-filter-color: #F5F4FA;   /* Light Gray */
 }
  body {
      font-family: "Roboto", sans-serif;
