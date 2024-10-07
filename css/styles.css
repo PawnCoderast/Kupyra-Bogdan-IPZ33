@@ -23,7 +23,7 @@
      color: var(--primary-color);
      text-decoration: none;
      font-family: "Raleway", sans-serif;
-     letter-spacing: 0.78px;
+     letter-spacing: 0.03em;
      font-weight: 700;
      font-size: 26px;
 }
@@ -51,16 +51,18 @@
      font-weight: 900;
      text-transform: uppercase;
      line-height: 1.36;
-     letter-spacing: 2.64px;
+     letter-spacing: 0.06em;
 }
  .hero-button {
      color: var(--background-primary-color);
      font-size: 16px;
      font-weight: 700;
      line-height: 1.87;
-     letter-spacing: 0.96px;
+     letter-spacing: 0.06em;
      background-color: var(--accent-color);
      cursor: pointer;
+     border: none;
+     font-family: inherit;
 }
  .feature, .development-stack-list, .filter-list, .team-list, .project-list {
      list-style-type: none;
@@ -70,24 +72,24 @@
      font-weight: 700;
      text-transform: uppercase;
      font-size: 14px;
-     letter-spacing: 0.42px;
+     letter-spacing: 0.03em;
 }
  .feature-description {
      color: var(--secondary-color);
      line-height: 1.71;
-     letter-spacing: 0.42px;
+     letter-spacing: 0.03em;
 }
  .development-stack-header, .team-header {
      color: var(--primary-color);
      font-size: 36px;
      font-weight: 700;
-     letter-spacing: 1.08px;
+     letter-spacing: 0.03em;
 }
  .employee-name, .employee-job {
      color: var(--primary-color);
      font-size: 16px;
-     font-weight: 500;
-     letter-spacing: 0.48px;
+     font-weight: 400;
+     letter-spacing: 0.03em;
 }
  .employee-job {
      color: var(--secondary-color);
@@ -99,11 +101,11 @@
      color: var(--background-primary-color);
 }
  .studio-adress, .email-footer, .tel-footer {
-     color: var(--transperent-color);
+     color: var(--background-primary-color);
      font-style: normal;
      font-size: 14px;
      line-height: 1.14;
-     letter-spacing: 0.42;
+     letter-spacing: 0.03em;
 }
  .email-footer, .tel-footer {
      color: var(--secondary-color);
@@ -116,9 +118,10 @@
      font-size: 16px;
      font-weight: 500;
      line-height: 1.62;
-     letter-spacing: 0.48px;
+     letter-spacing: 0.03em;
      cursor: pointer;
      transition: color 300ms;
+     border: none;
 }
  .filter:hover, .filter:focus {
      color: var(--background-primary-color);
@@ -132,11 +135,11 @@
      font-size: 18px;
      font-weight: 700;
      line-height: 2;
-     letter-spacing: 1.08px;
+     letter-spacing: 0.06em;
 }
  .project-description {
      color: var(--secondary-color);
      font-size: 16px;
      line-height: 1.87;
-     letter-spacing: 0.48px;
+     letter-spacing: 0.03em;
 }
