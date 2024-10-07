@@ -6,7 +6,9 @@
     --accent-color: #2196F3;            /* Blue */
     --transparent-color: #FFFFFF99;      /* Semi-Transparent White */
     --inactive-filter-color: #F5F4FA;   /* Light Gray */
+    --shadow-color: rgba(0, 0, 0, 0.15);
 }
+
  body {
      font-family: "Roboto", sans-serif;
      font-style: normal;
