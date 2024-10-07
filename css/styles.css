@@ -1,0 +1,145 @@
+:root {
+    --primary-color: #212121;           /* Dark Gray */
+    --secondary-color: #757575;         /* Medium Gray */
+    --background-primary-color: #FFFFFF; /* White */
+    --background-secondary-color: #2F303A; /* Dark Blue-Gray */
+    --accent-color: #2196F3;            /* Blue */
+    --transparent-color: #FFFFFF99;      /* Semi-Transparent White */
+    --inactive-filter-color: #F5F4FA;   /* Light Gray */
+}
+ body {
+     font-family: "Roboto", sans-serif;
+     font-style: normal;
+     font-size: 14px;
+     color: #212121;
+}
+ .header {
+     background-color: var(--background-primary-color);
+}
+ .contact-info, .navigation-button-list {
+     list-style-type: none;
+}
+ .logo, .footer-logo {
+     color: var(--primary-color);
+     text-decoration: none;
+     font-family: "Raleway", sans-serif;
+     letter-spacing: 0.03em;
+     font-weight: 700;
+     font-size: 26px;
+}
+ .accent-text-logo {
+     color: var(--accent-color) 
+}
+ .tel, .email, .navigation-button, .navigation-button-active {
+     transition: color 300ms;
+     color: var(--primary-color);
+     text-decoration: none;
+     font-weight: 500;
+}
+ .tel, .email {
+     color: var(--secondary-color) 
+}
+ .tel:hover, .tel:focus, .email:hover, .email:focus, .navigation-button:hover, .navigation-button:focus, .navigation-button-active {
+     color: var(--accent-color);
+}
+ .hero {
+     background-color: var(--background-secondary-color);
+}
+ .hero-header {
+     color: var(--background-primary-color);
+     font-size: 44px;
+     font-weight: 900;
+     text-transform: uppercase;
+     line-height: 1.36;
+     letter-spacing: 0.06em;
+}
+ .hero-button {
+     color: var(--background-primary-color);
+     font-size: 16px;
+     font-weight: 700;
+     line-height: 1.87;
+     letter-spacing: 0.06em;
+     background-color: var(--accent-color);
+     cursor: pointer;
+     border: none;
+     font-family: inherit;
+}
+ .feature, .development-stack-list, .filter-list, .team-list, .project-list {
+     list-style-type: none;
+}
+ .feature-title {
+     color: var(--primary-color);
+     font-weight: 700;
+     text-transform: uppercase;
+     font-size: 14px;
+     letter-spacing: 0.03em;
+}
+ .feature-description {
+     color: var(--secondary-color);
+     line-height: 1.71;
+     letter-spacing: 0.03em;
+}
+ .development-stack-header, .team-header {
+     color: var(--primary-color);
+     font-size: 36px;
+     font-weight: 700;
+     letter-spacing: 0.03em;
+}
+ .employee-name, .employee-job {
+     color: var(--primary-color);
+     font-size: 16px;
+     font-weight: 400;
+     letter-spacing: 0.03em;
+}
+ .employee-job {
+     color: var(--secondary-color);
+}
+ .footer {
+     background-color: var(--background-secondary-color);
+}
+ .footer-logo {
+     color: var(--background-primary-color);
+}
+ .studio-adress, .email-footer, .tel-footer {
+     color: var(--background-primary-color);
+     font-style: normal;
+     font-size: 14px;
+     line-height: 1.14;
+     letter-spacing: 0.03em;
+}
+ .email-footer, .tel-footer {
+     color: var(--secondary-color);
+     text-decoration: none;
+}
+ .filter {
+     color: var(--primary-color);
+     background-color: var(--inactive-filter-color);
+     font-family: inherit;
+     font-size: 16px;
+     font-weight: 500;
+     line-height: 1.62;
+     letter-spacing: 0.03em;
+     cursor: pointer;
+     transition: color 300ms;
+     border: none;
+}
+ .filter:hover, .filter:focus {
+     color: var(--background-primary-color);
+     background-color: var(--accent-color);
+}
+ .project {
+     text-decoration: none;
+}
+ .project-title {
+     color: var(--primary-color);
+     font-size: 18px;
+     font-weight: 700;
+     line-height: 2;
+     letter-spacing: 0.06em;
+}
+ .project-description {
+     color: var(--secondary-color);
+     font-size: 16px;
+     line-height: 1.87;
+     letter-spacing: 0.03em;
+}
