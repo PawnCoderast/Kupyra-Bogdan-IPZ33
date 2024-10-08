@@ -14,14 +14,54 @@
      font-family: "Roboto", sans-serif;
      font-style: normal;
      font-size: 14px;
+     font-weight: 400;
      color: #212121;
      margin: 0 auto;
 }
+.container {
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 0 15px;
+}
+button {
+    border: 0px;
+    border-radius: 4px;
+}
+button:focus {
+    outline: none;
+    border: 1px solid var(--accent-color);
+}
+h1, h2, h3, p, ul, li {
+    padding: 0;
+    margin: 0;
+}
  .header {
      background-color: var(--background-primary-color);
+     border-bottom: 1px solid #ECECEC;
 }
+.header .container {
+    display: flex;
+    align-items: center;
+}
+
  .contact-info, .navigation-button-list {
      list-style-type: none;
+}
+.logo {    
+    margin-right: 93px;
+}
+.navigation-button-list {
+    display: flex;
+    gap: 50px;    
+}
+.navigation-button {
+    display: inline-block;
+    padding: 32px 0;
+}
+.contact-info {
+    margin-left: auto;
+    display: flex;
+    gap: 40px;
 }
  .logo, .footer-logo {
      color: var(--primary-color);
