@@ -7,6 +7,7 @@
     --transparent-color: #FFFFFF99;      /* Semi-Transparent White */
     --inactive-filter-color: #F5F4FA;   /* Light Gray */
     --shadow-color: rgba(0, 0, 0, 0.15);
+    --footer-info-color: rgba(255, 255, 255, 0.6);
 }
 
  body {
@@ -14,6 +15,7 @@
      font-style: normal;
      font-size: 14px;
      color: #212121;
+     margin: 0 auto;
 }
  .header {
      background-color: var(--background-primary-color);
@@ -41,14 +43,30 @@
  .tel, .email {
      color: var(--secondary-color) 
 }
- .tel:hover, .tel:focus, .email:hover, .email:focus, .navigation-button:hover, .navigation-button:focus, .navigation-button-active {
-     color: var(--accent-color);
+.contact-info a:hover,
+.contact-info a:focus,
+.navigation-button:hover,
+.navigation-button:focus,
+.navigation-button-active {
+    color: var(--accent-color);
 }
+
  .hero {
      background-color: var(--background-secondary-color);
+     padding-top: 200px;
+     padding-bottom: 200px;
+}
+.hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
  .hero-header {
      color: var(--background-primary-color);
+     width: 696px;
+     text-align: center;
+     margin-bottom: 40px;
      font-size: 44px;
      font-weight: 900;
      text-transform: uppercase;
@@ -57,17 +75,36 @@
 }
  .hero-button {
      color: var(--background-primary-color);
+     padding: 10px 24px;
+     margin: auto;
      font-size: 16px;
      font-weight: 700;
      line-height: 1.87;
      letter-spacing: 0.06em;
+     border-radius: 4px;
+     box-shadow: 0px 4px 4px 0px var(--shadow-color);
      background-color: var(--accent-color);
      cursor: pointer;
      border: none;
      font-family: inherit;
 }
+.main-content {
+    padding-top: 94px;
+}
  .feature, .development-stack-list, .filter-list, .team-list, .project-list {
      list-style-type: none;
+}
+.feature {
+    width: 270px;
+    height: 98px;
+    flex-shrink: 0;
+}
+
+.feature-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
 }
  .feature-title {
      color: var(--primary-color);
@@ -75,6 +112,7 @@
      text-transform: uppercase;
      font-size: 14px;
      letter-spacing: 0.03em;
+     padding-bottom: 10px;
 }
  .feature-description {
      color: var(--secondary-color);
@@ -83,24 +121,68 @@
 }
  .development-stack-header, .team-header {
      color: var(--primary-color);
+     text-align: center;
      font-size: 36px;
      font-weight: 700;
      letter-spacing: 0.03em;
+     margin-bottom: 50px;
+}
+.development-stack-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.development {
+    padding: 94px 0px;
+}
+.team-section {
+    background-color: var(--inactive-filter-color);
+    padding: 94px 0px;
+}
+.team-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+.employee {
+    background-color: var(--background-primary-color);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+.employee img {
+    height: 260px;
+    width: 270px;
+}
+.employee-name-job {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
  .employee-name, .employee-job {
      color: var(--primary-color);
+     padding-bottom: 10px;
      font-size: 16px;
      font-weight: 400;
      letter-spacing: 0.03em;
+     display: flex;
+     justify-content: center;
 }
  .employee-job {
      color: var(--secondary-color);
 }
  .footer {
      background-color: var(--background-secondary-color);
+     padding-top: 60px;
+     padding-bottom: 60px;
 }
  .footer-logo {
      color: var(--background-primary-color);
+}
+.contact-info-footer {
+    margin-top: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
  .studio-adress, .email-footer, .tel-footer {
      color: var(--background-primary-color);
@@ -110,8 +192,19 @@
      letter-spacing: 0.03em;
 }
  .email-footer, .tel-footer {
-     color: var(--secondary-color);
+     color: var(--footer-info-color);
      text-decoration: none;
+}
+
+.project-area-container {
+    padding: 94px 0px;
+}
+.filter-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
 }
  .filter {
      color: var(--primary-color);
@@ -123,14 +216,38 @@
      letter-spacing: 0.03em;
      cursor: pointer;
      transition: color 300ms;
+     padding: 6px 22px;
+     gap: 30px;
      border: none;
 }
  .filter:hover, .filter:focus {
      color: var(--background-primary-color);
      background-color: var(--accent-color);
+     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
  .project {
      text-decoration: none;
+}
+.project-list {
+    display: grid;
+    grid-template-columns: 370px 370px 370px;
+    justify-content: center;
+    gap: 30px;
+}
+.project-list li {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #EEE;
+}
+.project img {
+    margin-bottom: 30px;
+    width: 370px;
+    height: 294px;
+    display: block;
+
+}
+.project-details {
+    padding: 0px 24px 20px 24px;
 }
  .project-title {
      color: var(--primary-color);
