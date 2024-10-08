@@ -136,7 +136,6 @@ h1, h2, h3, p, ul, li {
 }
 .feature {
     width: 270px;
-    height: 98px;
     flex-shrink: 0;
 }
 
@@ -195,20 +194,26 @@ h1, h2, h3, p, ul, li {
     width: 270px;
 }
 .employee-name-job {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    align-items: center;
 }
  .employee-name, .employee-job {
      color: var(--primary-color);
-     padding-bottom: 10px;
      font-size: 16px;
      font-weight: 400;
      letter-spacing: 0.03em;
      display: flex;
      justify-content: center;
 }
+.employee-name {
+    margin-bottom: 10px;
+}
  .employee-job {
      color: var(--secondary-color);
+     margin-bottom: 16px;
 }
  .footer {
      background-color: var(--background-secondary-color);
