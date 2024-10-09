@@ -8,6 +8,8 @@
     --inactive-filter-color: #F5F4FA;   /* Light Gray */
     --shadow-color: rgba(0, 0, 0, 0.15);
     --footer-info-color: rgba(255, 255, 255, 0.6);
+    --block-feature-color: rgba(245, 244, 250, 1);
+    --employee-icon-color: rgba(175, 177, 184, 1);
 }
 
  body {
@@ -20,8 +22,10 @@
 }
 .container {
      max-width: 1200px;
-     margin: 0 auto;
-     padding: 0 15px;
+     padding-left: 15px;
+     padding-right: 15px;
+     margin-left: auto;
+     margin-right: auto;
 }
 button {
     border: 0px;
@@ -45,9 +49,6 @@ h1, h2, h3, p, ul, li {
     align-items: center;
 }
 
- .contact-info, .navigation-button-list {
-     list-style-type: none;
-}
 .logo {    
     margin-right: 93px;
 }
@@ -92,6 +93,8 @@ h1, h2, h3, p, ul, li {
 }
 
  .hero {
+     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+     url('/images/img-overlay.jpg') center/cover no-repeat;     
      background-color: var(--background-secondary-color);
      padding-top: 200px;
      padding-bottom: 200px;
@@ -131,7 +134,7 @@ h1, h2, h3, p, ul, li {
 .main-content {
     padding-top: 94px;
 }
- .feature, .development-stack-list, .filter-list, .team-list, .project-list {
+.contact-info, .navigation-button-list, .feature, .development-stack-list, .filter-list, .team-list, .project-list, .footer-icons-ul, .employee-icons-ul {
      list-style-type: none;
 }
 .feature {
@@ -139,6 +142,29 @@ h1, h2, h3, p, ul, li {
     flex-shrink: 0;
 }
 
+.feature::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background-color: var(--block-feature-color);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.antenna::before {
+    background-image: url("/images/antenna.svg");
+}
+.clock::before {
+    background-image: url("/images/clock.svg");
+}
+.diagram::before {
+    background-image: url("/images/diagram.svg");
+}
+.astronaut::before {
+    background-image: url("/images/astronaut.svg");
+}
 .feature-list {
     display: flex;
     flex-direction: row;
@@ -212,11 +238,14 @@ h1, h2, h3, p, ul, li {
  .employee-job {
      color: var(--secondary-color);
      margin-bottom: 16px;
+     font-weight: 400;
 }
  .footer {
      background-color: var(--background-secondary-color);
      padding-top: 60px;
      padding-bottom: 60px;
+     width: 100%;
+     position: relative;
 }
  .footer-logo {
      color: var(--background-primary-color);
@@ -305,3 +334,73 @@ h1, h2, h3, p, ul, li {
      line-height: 1.87;
      letter-spacing: 0.03em;
 }
+.footer-icons-div {
+    color: #FFF;
+    font-family: 'Roboto', sans-serif; /* Лучше явно указать шрифт */
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 20px 0; /* Padding для внутреннего отступа */
+    margin-left: 70px;
+}
+
+.footer-icons-div h3 {
+    margin-bottom: 20px;
+    letter-spacing: 0.03em;
+}
+
+.footer-icons-ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Равномерное распределение */
+    gap: 10px;
+    justify-content: start;
+}
+
+.footer>div {
+    display: grid;
+    grid-template-columns: repeat(2, auto); /* Равномерное распределение колонок */
+    justify-content: start;
+}
+
+.footer-icon circle {
+    fill: rgba(255, 255, 255, 0.1);
+}
+
+.footer-icon-twitter {
+    fill: #1DA1F2;
+}
+
+.footer-icon, .footer-icon-twitter use {
+    color: var(--background-primary-color);
+}
+
+.employee-icons {
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.employee-icons-ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Равномерное распределение */
+    gap: 10px;
+    justify-content: center;
+}
+
+.employee-icon circle {
+    fill: white;
+}
+
+.employee-icon, use {
+    color: var(--employee-icon-color);
+}
+
+.employee-icon:hover circle {
+    transition: 300ms;
+    fill: var(--accent-color)
+}
+
+.employee-icon:hover use {
+    transition: 300ms;
+    color: var(--background-primary-color);
+}
+
