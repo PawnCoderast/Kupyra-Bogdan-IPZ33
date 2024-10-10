@@ -10,6 +10,7 @@
     --footer-info-color: rgba(255, 255, 255, 0.6);
     --block-feature-color: rgba(245, 244, 250, 1);
     --employee-icon-color: rgba(175, 177, 184, 1);
+    --project-color-box-shadow: rgba(0, 0, 0, 0.16);
 }
 
  body {
@@ -313,10 +314,13 @@ h1, h2, h3, p, ul, li {
 }
 .project img {
     margin-bottom: 30px;
-    width: 370px;
+    width: 380px;
     height: 294px;
     display: block;
 
+}
+.project:hover {
+    box-shadow: 1px 4px 6px var(--project-color-box-shadow);
 }
 .project-details {
     padding: 0px 24px 20px 24px;
@@ -415,14 +419,6 @@ h1, h2, h3, p, ul, li {
     gap: 20px;
 }
 
-.regular-customers-stack {
-    display: flex;
-    border-radius: 4px;
-    border: 1px solid #afb1b8;
-    transition: border-color 300ms ease;
-    fill: #afb1b8;
-}
-
 .regular-customers-stack-icon {
     width: auto;
     height: auto;
@@ -438,11 +434,11 @@ h1, h2, h3, p, ul, li {
 
 .regular-customers-stack {
     border-radius: 4px;
-    border: 1px #afb1b8 solid;
+    border: 1px var(--employee-icon-color) solid;
 }
 
 .regular-customers-stack:hover {
     transition: 300ms;
     color: var(--accent-color);
-    border: 1px #2196f3 solid;
+    border: 1px var(--accent-color) solid;
 }
