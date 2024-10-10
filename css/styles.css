@@ -134,7 +134,7 @@ h1, h2, h3, p, ul, li {
 .main-content {
     padding-top: 94px;
 }
-.contact-info, .navigation-button-list, .feature, .development-stack-list, .filter-list, .team-list, .project-list, .footer-icons-ul, .employee-icons-ul {
+.contact-info, .navigation-button-list, .feature, .development-stack-list, .filter-list, .team-list, .project-list, .footer-icons-ul, .employee-icons-ul, .regular-customers-stack-list {
      list-style-type: none;
 }
 .feature {
@@ -184,7 +184,7 @@ h1, h2, h3, p, ul, li {
      line-height: 1.71;
      letter-spacing: 0.03em;
 }
- .development-stack-header, .team-header {
+ .development-stack-header, .team-header, .regular-customers-stack-header {
      color: var(--primary-color);
      text-align: center;
      font-size: 36px;
@@ -404,3 +404,45 @@ h1, h2, h3, p, ul, li {
     color: var(--background-primary-color);
 }
 
+.regular-customers {
+    padding: 94px;
+}
+
+.regular-customers-stack-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.regular-customers-stack {
+    display: flex;
+    border-radius: 4px;
+    border: 1px solid #afb1b8;
+    transition: border-color 300ms ease;
+    fill: #afb1b8;
+}
+
+.regular-customers-stack-icon {
+    width: auto;
+    height: auto;
+    padding: 16px 32px;
+    fill: currentColor;
+}
+
+.regular-customers-stack:hover use {
+    transition: 300ms;
+    color: var(--accent-color);
+    fill: var(--accent-color);
+}
+
+.regular-customers-stack {
+    border-radius: 4px;
+    border: 1px #afb1b8 solid;
+}
+
+.regular-customers-stack:hover {
+    transition: 300ms;
+    color: var(--accent-color);
+    border: 1px #2196f3 solid;
+}
