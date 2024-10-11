@@ -370,8 +370,15 @@ h1, h2, h3, p, ul, li {
     fill: rgba(255, 255, 255, 0.1);
 }
 
-.footer-icon-twitter {
-    fill: #1DA1F2;
+.footer-icon:hover circle {
+    transition: 300ms;
+    fill: var(--accent-color);
+    color: var(--background-primary-color);
+}
+
+.footer-icon:hover use {
+    transition: 300ms;
+    color: var(--background-primary-color);
 }
 
 .footer-icon, .footer-icon-twitter use {
