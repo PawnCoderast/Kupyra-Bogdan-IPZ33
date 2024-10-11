@@ -101,7 +101,7 @@ h1, h2, h3, p, ul, li {
 
  .hero {
      background: linear-gradient(var(--hero-gradient-color), var(--hero-gradient-color)), 
-     url('/images/img-overlay.jpg') center/cover no-repeat;
+     url('.//images/img-overlay.jpg') center/cover no-repeat;
      background-color: var(--background-secondary-color);
      padding-top: 200px;
      padding-bottom: 200px;
@@ -161,16 +161,16 @@ h1, h2, h3, p, ul, li {
 }
 
 .antenna::before {
-    background-image: url("/images/antenna.svg");
+    background-image: url("./images/antenna.svg");
 }
 .clock::before {
-    background-image: url("/images/clock.svg");
+    background-image: url("./images/clock.svg");
 }
 .diagram::before {
-    background-image: url("/images/diagram.svg");
+    background-image: url("./images/diagram.svg");
 }
 .astronaut::before {
-    background-image: url("/images/astronaut.svg");
+    background-image: url("./images/astronaut.svg");
 }
 .feature-list {
     display: flex;
