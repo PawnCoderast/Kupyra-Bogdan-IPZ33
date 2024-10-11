@@ -48,6 +48,7 @@ h1, h2, h3, p, ul, li {
 .header .container {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .logo {    
@@ -170,6 +171,7 @@ h1, h2, h3, p, ul, li {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
 }
  .feature-title {
@@ -196,6 +198,7 @@ h1, h2, h3, p, ul, li {
 .development-stack-list {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
 }
 .development {
@@ -209,6 +212,7 @@ h1, h2, h3, p, ul, li {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
 }
 .employee {
@@ -355,14 +359,14 @@ h1, h2, h3, p, ul, li {
 
 .footer-icons-ul {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Равномерное распределение */
+    grid-template-columns: repeat(4, auto);
     gap: 10px;
     justify-content: start;
 }
 
 .footer>div {
     display: grid;
-    grid-template-columns: repeat(2, auto); /* Равномерное распределение колонок */
+    grid-template-columns: repeat(2, auto);
     justify-content: start;
 }
 
@@ -392,7 +396,7 @@ h1, h2, h3, p, ul, li {
 
 .employee-icons-ul {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Равномерное распределение */
+    grid-template-columns: repeat(4, auto);
     gap: 10px;
     justify-content: center;
 }
