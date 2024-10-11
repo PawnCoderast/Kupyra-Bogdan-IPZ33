@@ -1,16 +1,20 @@
 :root {
-    --primary-color: #212121;           /* Dark Gray */
-    --secondary-color: #757575;         /* Medium Gray */
-    --background-primary-color: #FFFFFF; /* White */
-    --background-secondary-color: #2F303A; /* Dark Blue-Gray */
-    --accent-color: #2196F3;            /* Blue */
-    --transparent-color: #FFFFFF99;      /* Semi-Transparent White */
-    --inactive-filter-color: #F5F4FA;   /* Light Gray */
+    --primary-color: rgb(33, 33, 33);           /* Dark Gray */
+    --secondary-color: rgb(117, 117, 117);         /* Medium Gray */
+    --background-primary-color: rgb(255, 255, 255); /* White */
+    --background-secondary-color: rgb(47, 48, 58); /* Dark Blue-Gray */
+    --accent-color: rgb(33, 150, 243);            /* Blue */
+    --transparent-color: rgba(255, 255, 255, 0.6);      /* Semi-Transparent White */
+    --inactive-filter-color: rgb(245, 244, 250);   /* Light Gray */
     --shadow-color: rgba(0, 0, 0, 0.15);
     --footer-info-color: rgba(255, 255, 255, 0.6);
     --block-feature-color: rgba(245, 244, 250, 1);
     --employee-icon-color: rgba(175, 177, 184, 1);
-    --project-color-box-shadow: rgba(0, 0, 0, 0.16);
+    --project-color-box-shadow: rgba(0, 0, 0, 0.161);
+    --project-list-border-color: rgb(237, 237, 237);
+    --hero-gradient-color: rgba(47, 48, 58, 0.4);
+    --body-color: rgb(33, 33, 33);
+    --header-border-color: rgb(236, 236, 236);
 }
 
  body {
@@ -18,7 +22,7 @@
      font-style: normal;
      font-size: 14px;
      font-weight: 400;
-     color: #212121;
+     color: var(--body-color);
      margin: 0 auto;
 }
 .container {
@@ -42,7 +46,7 @@ h1, h2, h3, p, ul, li {
 }
  .header {
      background-color: var(--background-primary-color);
-     border-bottom: 1px solid #ECECEC;
+     border-bottom: 1px solid var(--header-border-color);
      padding: 32px 0;
 }
 .header .container {
@@ -64,6 +68,7 @@ h1, h2, h3, p, ul, li {
 .contact-info {
     margin-left: auto;
     display: flex;
+    flex-wrap: wrap;
     gap: 40px;
 }
  .logo, .footer-logo {
@@ -95,8 +100,8 @@ h1, h2, h3, p, ul, li {
 }
 
  .hero {
-     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-     url('/images/img-overlay.jpg') center/cover no-repeat;     
+     background: linear-gradient(var(--hero-gradient-color), var(--hero-gradient-color)), 
+     url('/images/img-overlay.jpg') center/cover no-repeat;
      background-color: var(--background-secondary-color);
      padding-top: 200px;
      padding-bottom: 200px;
@@ -280,6 +285,7 @@ h1, h2, h3, p, ul, li {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 8px;
     margin-bottom: 50px;
 }
@@ -307,14 +313,15 @@ h1, h2, h3, p, ul, li {
 }
 .project-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    /*grid-template-columns: repeat(3, 1fr);*/
+    grid-template-columns: repeat(auto-fill, minmax(370px, auto));
     justify-content: center;
     gap: 30px;
 }
 .project-list li {
     display: flex;
     flex-direction: column;
-    border: 1px solid #EEE;
+    border: 1px solid var(--project-list-border-color);
 }
 .project img {
     margin-bottom: 30px;
@@ -343,12 +350,12 @@ h1, h2, h3, p, ul, li {
      letter-spacing: 0.03em;
 }
 .footer-icons-div {
-    color: #FFF;
-    font-family: 'Roboto', sans-serif; /* Лучше явно указать шрифт */
+    color: var(--background-primary-color);
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
-    padding: 20px 0; /* Padding для внутреннего отступа */
+    padding: 20px 0;
     margin-left: 70px;
 }
 
@@ -402,7 +409,7 @@ h1, h2, h3, p, ul, li {
 }
 
 .employee-icon circle {
-    fill: white;
+    fill: var(--background-primary-color);
 }
 
 .employee-icon, use {
