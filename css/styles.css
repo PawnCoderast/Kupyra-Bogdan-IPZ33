@@ -161,7 +161,7 @@ h1, h2, h3, p, ul, li {
 }
 
 .antenna::before {
-    background-image: url("../antenna.svg");
+    background-image: url("../images/antenna.svg");
 }
 .clock::before {
     background-image: url("../images/clock.svg");
