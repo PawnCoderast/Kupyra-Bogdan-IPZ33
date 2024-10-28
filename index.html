@@ -48,7 +48,61 @@
 			<section class="hero">
                 <div class="hero-container container">
                     <h1 class="hero-header">Ефективні рішення для вашого бізнесу</h1>
-                    <button class="hero-button" type="button">Замовити послугу</button>
+                    <button id="open-modal" class="hero-button" type="button">Замовити послугу</button>
+                    <div class="backdrop is-hidden" data-modal>
+                        <div class="modal-wrapper">
+                            <div class="modal">
+                                <button type="button" class="close-modal-button" data-modal-close="">
+                                <svg class="icon-modal">
+                                    <use href="./images/icon-close.svg#icon"></use>
+                                </svg>
+                                </button>
+                                <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+                    
+                                <form class="form-enter">
+                                    <div class="form-group">
+                                        <label for="name">Ім'я</label>
+                                        <div class="input-wrapper">
+                                            <svg class="icon icon-name" viewBox="0 0 18 18"><path d="M9 9C10.6575 9 12 7.6575 12 6C12 4.3425 10.6575 3 9 3C7.3425 3 6 4.3425 6 6C6 7.6575 7.3425 9 9 9ZM9 10.5C6.9975 10.5 3 11.505 3 13.5V14.25C3 14.6625 3.3375 15 3.75 15H14.25C14.6625 15 15 14.6625 15 14.25V13.5C15 11.505 11.0025 10.5 9 10.5Z" /></svg>
+                                            <input type="text" id="name" name="name" placeholder="" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="phone">Телефон</label>
+                                        <div class="input-wrapper">
+                                            <svg class="icon icon-phone" viewBox="0 0 18 18"><path d="M13.996 11.1226L12.1579 10.9127C11.7164 10.8621 11.2822 11.0141 10.971 11.3252L9.63945 12.6568C7.59144 11.6147 5.91251 9.94301 4.87041 7.88775L6.20922 6.54894C6.5204 6.23775 6.67237 5.80355 6.62171 5.3621L6.41185 3.53842C6.325 2.8075 5.70988 2.2575 4.97173 2.2575H3.71976C2.902 2.2575 2.22175 2.93776 2.2724 3.75552C2.65595 9.93577 7.59868 14.8713 13.7717 15.2548C14.5894 15.3055 15.2697 14.6252 15.2697 13.8075V12.5555C15.2769 11.8246 14.7269 11.2095 13.996 11.1226Z" /></svg>
+                                            <input type="tel" id="phone" name="phone" placeholder="" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="email">Пошта</label>
+                                        <div class="input-wrapper">
+                                            <svg class="icon icon-email" viewBox="0 0 18 18"><path d="M15 3H3C2.175 3 1.5075 3.675 1.5075 4.5L1.5 13.5C1.5 14.325 2.175 15 3 15H15C15.825 15 16.5 14.325 16.5 13.5V4.5C16.5 3.675 15.825 3 15 3ZM14.7 6.1875L9.3975 9.5025C9.1575 9.6525 8.8425 9.6525 8.6025 9.5025L3.3 6.1875C3.1125 6.0675 3 5.865 3 5.6475C3 5.145 3.5475 4.845 3.975 5.1075L9 8.25L14.025 5.1075C14.4525 4.845 15 5.145 15 5.6475C15 5.865 14.8875 6.0675 14.7 6.1875Z" /></svg>
+                                            <input type="email" id="email" name="email" placeholder="" required>
+                                        </div>
+                                    </div>                                    
+                    
+                                    <div class="form-group comment-padding">
+                                        <label for="comment">Коментар</label>
+                                        <textarea class="comment" id="comment" name="comment" placeholder="Введіть текст" required></textarea>
+                                    </div>
+                    
+                                    <div class="agreement">
+                                        <input type="checkbox" id="checkbox" name="checkbox" required>
+                                        <label for="agreement">
+                                            <span>Погоджуюся з розсилкою та приймаю </span>
+                                            <a href="#" class="contract-terms">Умови договору</a>
+                                        </label>
+                                    </div>
+                    
+                                    <button type="submit" class="submit-button">Відправити</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
 			</section>
 			<section class="main-content">
@@ -90,12 +144,15 @@
                     <ul class="development-stack-list">
                         <li class="development-stack">
                             <img src="./images/img_1.jpg" alt="макінтош" width="370" height="294" />
+                            <p class="development-stack-text">Десктопні додатки</p>
                         </li>
                         <li class="development-stack">
                             <img src="./images/img_2.jpg" alt="макбук" width="370" height="294" />
+                            <p class="development-stack-text">Мобільні додатки</p>
                         </li>
                         <li class="development-stack">
                             <img src="./images/img_3.jpg" alt="айпад" width="370" height="294" />
+                            <p class="development-stack-text">Дизайнерські рішення</p>
                         </li>
                     </ul>
                 </div>
@@ -382,8 +439,22 @@
                         </li>
                     </ul>
                 </div>
-                
+                <div class="footer-subscribe">
+                    <p class="footer-text">Підпишіться на розсилку</p>
+                    <form class="footer-form">
+                        <label class="footer-label-input">
+                            <input type="email" class="footer_input" required="" placeholder="E-mail">
+                        </label>
+                        <button type="submit" class="footer_button">
+                            Підписатися
+                            <svg class="footer-button-svg" width="24" height="24">
+                                <use href="./images/icon-send.svg#icon"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
             </div>
         </footer>
 	</body>
+    <script src="./js/modal.js"></script>
 </html>
