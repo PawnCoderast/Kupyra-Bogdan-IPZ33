@@ -664,14 +664,6 @@ textarea {
 
     height: 120px;
 }
-
-/* Плейсхолдер */
-::placeholder {
-    color: rgba(117, 117, 117, 0.50);
-    font-size: 12px;
-    letter-spacing: 0.12px;
-}
-
 .agreement {
     color: #757575;
     font-size: 14px;
@@ -786,6 +778,10 @@ body.modal-open {
     flex-grow: 1;
 }
 
+.footer .footer-label-input {
+    flex-grow: 1;
+}
+
 .footer .footer-text {
     color: #fff;
     font-weight: 700;
@@ -807,6 +803,7 @@ body.modal-open {
     line-height: 1.25;
     letter-spacing: .03em;
     color: rgba(255, 255, 255, .6);
+    width: 100%;
 }
 .footer .footer_button {
     background: #2196f3;
